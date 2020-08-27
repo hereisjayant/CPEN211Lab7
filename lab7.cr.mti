@@ -1,0 +1,85 @@
+C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/shifter.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/shifter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module control
+-- Compiling module vDFF
+
+Top level modules:
+	control
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/alu.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+-- Compiling module AddSub
+-- Compiling module Adder1
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regfile
+-- Compiling module Dec
+-- Compiling module vDFFE
+-- Compiling module Mux8
+
+Top level modules:
+	regfile
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module control_tb
+
+Top level modules:
+	control_tb
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+-- Compiling module Mux2a
+-- Compiling module Mux4b
+
+Top level modules:
+	datapath
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v {0 {vlog -work work -stats=none {C:\Users\herei\Desktop\CPEN\CPEN211\programs\lab7\lab7_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_top
+** Error: (vlog-13069) C:\Users\herei\Desktop\CPEN\CPEN211\programs\lab7\lab7_top.v(12): near "EOF": syntax error, unexpected end of source code.
+
+} {4.0 5.0} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_check_tb
+
+Top level modules:
+	lab7_check_tb
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module InstructionDecoder
+-- Compiling module Mux3H
+
+Top level modules:
+	InstructionDecoder
+
+} {} {}}
