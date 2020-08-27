@@ -1,22 +1,27 @@
+//We need have only the following I/Os for lab 7 CPU:
+//1. mem_cmd: Output from the FSM
+//2. mem_add: output from the adress selecting MUX
+//3. read_data: input to the Instruction register
 
 
-module cpu(clk,reset,s,load,in,out,N,V,Z,w);
+module cpu(clk,reset,in,out,N,V,Z);
 
 //I/Os
   input clk;
-  input reset, s; //input for FSM
-
-  input load; //load for the instruction register
+  input reset; //input for FSM
 
   input [15:0] in; //this goes into the instruction register
   output [15:0] out; //gives out the contents of register C (component 5)
-  output N, V, Z, w; //give the value of negative, overflow
+  output N, V, Z; //give the value of negative, overflow
                     //and zero status register bits.
                     //w set to 1 if state machine is in the reset state and is waiting for s to be 1
 
 //------------------------------------------------------------------------------
 
 //Wires
+
+  //To instruction register
+  wire load_ir; //from FSM
 
   //Wires to instruction decoder
   wire [15:0] iRegToiDec;
@@ -57,7 +62,7 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
 
 
   //Instruction Register:
-  vDFFE #(16) InstructionReg(clk, load, in, iRegToiDec);
+  vDFFE #(16) InstructionReg(clk, load_ir, in, iRegToiDec);
 
 //------------------------------------------------------------------------------
 
@@ -82,9 +87,15 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
   control FSM(   //inputs to fsm
                 clk,
                 reset,
-                s,
                 opcode,
-                op,
+                op,                  
+                    //NOTE: outputs for lab7:
+                load_ir,  //enable for instruction register
+                load_addr, //enable for Address register
+                load_pc,   //enable for program counter
+                reset_pc,  //resets the Program counter mux
+                addr_sel,  //mux for selecting the addr. source(datapath_out vs PC)
+                mem_cmd,   //1-hot read write: `MREAD: 2'b01, `MWRITE: 2'b10
                     //input to the first multiplexer b4 regfile
                 vsel,
                     //input to the REGFILE
@@ -101,8 +112,7 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
                 loads,
                     //Use the 1-HOT select for Rn | Rd | Rm
                 nsel,
-                    //signal for wait state
-                w);
+                );
 
 
 //------------------------------------------------------------------------------
