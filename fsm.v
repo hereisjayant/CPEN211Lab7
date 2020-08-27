@@ -64,12 +64,12 @@ module control(   //inputs to fsm
   input [1:0] op;
 
             //Outouts added for lab 7
-  output load_ir,  //enable for instruction register
-  output load_addr, //enable for Address register
-  output load_pc,   //enable for program counter
-  output reset_pc,  //resets the Program counter mux
-  output addr_sel,  //mux for selecting the addr. source(datapath_out vs PC)
-  output [1:0] mem_cmd,   //1-hot read write: `MREAD: 2'b01, `MWRITE: 2'b10
+  output load_ir;  //enable for instruction register
+  output load_addr; //enable for Address register
+  output load_pc;   //enable for program counter
+  output reset_pc;  //resets the Program counter mux
+  output addr_sel;  //mux for selecting the addr. source(datapath_out vs PC)
+  output [1:0] mem_cmd;   //1-hot read write: `MREAD: 2'b01, `MWRITE: 2'b10
 
                   //input to the first multiplexer before regfile
   output [1:0] vsel;
@@ -93,8 +93,8 @@ module control(   //inputs to fsm
 //------------------------------------------------------------------------------
 
   //inputs to mem_cmd for read/write operation
-  `define MREAD: 2'b01;
-  `define MWRITE: 2'b10;
+  `define MREAD       2'b01
+  `define MWRITE      2'b10
 
   // state encoding for control FSM //Modified for lab 7
   `define SW          5

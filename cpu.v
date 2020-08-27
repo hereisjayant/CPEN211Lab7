@@ -1,16 +1,18 @@
 //We need have only the following I/Os for lab 7 CPU:
 //1. mem_cmd: Output from the FSM
-//2. mem_add: output from the adress selecting MUX
+//2. mem_addr: output from the adress selecting MUX
 //3. read_data: input to the Instruction register
 
 
-module cpu(clk,reset,in,out,N,V,Z);
+module cpu(clk, reset, read_data, mem_cmd, mem_addr, out, N, V, Z);
 
 //I/Os
   input clk;
   input reset; //input for FSM
+  input [15:0] read_data; //this goes into the instruction register
 
-  input [15:0] in; //this goes into the instruction register
+  output [1:0] mem_cmd; //output from FSM
+  output [8:0] mem_addr;  //output from addr_selMux
   output [15:0] out; //gives out the contents of register C (component 5)
   output N, V, Z; //give the value of negative, overflow
                     //and zero status register bits.
@@ -51,6 +53,19 @@ module cpu(clk,reset,in,out,N,V,Z);
     wire loadc;        //pipeline c
     wire loads;        //status register
 
+  //To addr_sel MUX:
+    wire addr_sel;  //from FSM
+    wire [8:0] pcToAddrSel;  //from PC
+
+  //To PC reset MUX:
+    wire reset_pc;
+
+  //To ProgramCounter
+    wire load_pc;  //from FSM
+    wire next_pc;  //from resetPCMUX
+
+
+
 
 
 
@@ -62,7 +77,22 @@ module cpu(clk,reset,in,out,N,V,Z);
 
 
   //Instruction Register:
-  vDFFE #(16) InstructionReg(clk, load_ir, in, iRegToiDec);
+  vDFFE #(16) InstructionReg(clk, load_ir, read_data, iRegToiDec);
+
+//------------------------------------------------------------------------------
+
+  //PC Reset Mux
+  Mux2a #(9) PCResetMux(.a1(9'b0), .a0(pcToAddrSel + 9'b1), .s(reset_pc), .b(next_pc));
+
+//------------------------------------------------------------------------------
+
+  //program counter
+  vDFFE #(9) ProgramCounter(clk, load_pc, next_pc, pcToAddrSel);
+
+//------------------------------------------------------------------------------
+
+  //Adress Selecting Mux
+  Mux2a #(9) addr_selMux( pcToAddrSel, 9'b0, addr_sel, mem_addr);
 
 //------------------------------------------------------------------------------
 
@@ -88,7 +118,7 @@ module cpu(clk,reset,in,out,N,V,Z);
                 clk,
                 reset,
                 opcode,
-                op,                  
+                op,
                     //NOTE: outputs for lab7:
                 load_ir,  //enable for instruction register
                 load_addr, //enable for Address register
