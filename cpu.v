@@ -108,7 +108,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 //------------------------------------------------------------------------------
 
   //Adress Selecting Mux
-  Mux2a #(9) addr_selMux( pcToAddrSel, 9'b0, addr_sel, mem_addr);
+  Mux2a #(9) addr_selMux( pcToAddrSel, dataAdressToAddrSel, addr_sel, mem_addr);
 
 //------------------------------------------------------------------------------
 
