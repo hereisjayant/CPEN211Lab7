@@ -8,4 +8,14 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
   output [9:0] LEDR;
   output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
 
+//------------------------------------------------------------------------------
+
+//Wires:
+
+
+//------------------------------------------------------------------------------
+
+//Declared modules:
+
+  cpu CPU(clk, reset, read_data, mem_cmd, mem_addr, out, N, V, Z);
   

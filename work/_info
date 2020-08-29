@@ -96,13 +96,13 @@ Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/
 R10
 R11
 vcontrol_tb
-!s110 1598553819
+!s110 1598689497
 !i10b 1
 !s100 U:2N:g^c?VeJ^Q6MF]RzN2
 IIB]?XCfO?FObPg9JLPjhR3
 R1
 R2
-w1598553806
+w1598554199
 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v
 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v
 L0 14
@@ -110,20 +110,20 @@ R6
 r1
 !s85 0
 31
-!s108 1598553819.000000
+!s108 1598689497.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v|
 !i113 1
 R10
 R11
 vcpu
-!s110 1598553818
+!s110 1598689414
 !i10b 1
-!s100 G<L<`k38zVFfc4AFP1h>41
-IAkfK@;P4E]znMWRPoMYTX1
+!s100 W1l:93KzH?dQ7PK@W_jCR0
+I26UaUVfzFke[X;7VVf^Po3
 R1
 R2
-w1598552826
+w1598689205
 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
 L0 7
@@ -131,7 +131,7 @@ R6
 r1
 !s85 0
 31
-R7
+!s108 1598689414.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v|
 !i113 1
