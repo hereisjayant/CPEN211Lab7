@@ -117,13 +117,13 @@ r1
 R10
 R11
 vcpu
-!s110 1598689414
+!s110 1598701691
 !i10b 1
-!s100 W1l:93KzH?dQ7PK@W_jCR0
-I26UaUVfzFke[X;7VVf^Po3
+!s100 ozel^VcGYGR5P;6SH=NlZ3
+IkAISaX>TU?D`CBFY:kG`o3
 R1
 R2
-w1598689205
+w1598689707
 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
 L0 7
@@ -131,7 +131,7 @@ R6
 r1
 !s85 0
 31
-!s108 1598689414.000000
+!s108 1598701691.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v|
 !i113 1
@@ -180,6 +180,27 @@ Z31 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/
 R10
 R11
 n@dec
+vequals
+Z32 !s110 1598701686
+!i10b 1
+!s100 Y@<0LCoT4FonC6]^5XP431
+I`J8]10n@fiHN`=Ejl?>n23
+R1
+R2
+Z33 w1598701675
+Z34 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
+Z35 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
+L0 91
+R6
+r1
+!s85 0
+31
+Z36 !s108 1598701685.000000
+Z37 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v|
+Z38 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v|
+!i113 1
+R10
+R11
 vInstructionDecoder
 R12
 !i10b 1
@@ -187,17 +208,17 @@ R12
 IiF7h8:LKoCRdzKizmc<163
 R1
 R2
-Z32 w1597338277
-Z33 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v
-Z34 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v
+Z39 w1597338277
+Z40 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v
+Z41 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v
 L0 4
 R6
 r1
 !s85 0
 31
 R16
-Z35 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
-Z36 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
+Z42 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
+Z43 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
 !i113 1
 R10
 R11
@@ -217,9 +238,30 @@ R6
 r1
 !s85 0
 31
-Z37 !s108 1598553815.000000
+Z44 !s108 1598553815.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v|
+!i113 1
+R10
+R11
+vlab7_top
+R32
+!i10b 1
+!s100 52Bc?W3anNM=[<Ji43SAg2
+I3bf[PX8;cSb9@omVZ?XcD3
+R1
+R2
+R33
+R34
+R35
+L0 8
+R6
+r1
+!s85 0
+31
+R36
+R37
+R38
 !i113 1
 R10
 R11
@@ -252,17 +294,17 @@ R12
 ImnH`^n91kib<aB_@Hg1202
 R1
 R2
-R32
-R33
-R34
+R39
+R40
+R41
 L0 74
 R6
 r1
 !s85 0
 31
 R16
-R35
-R36
+R42
+R43
 !i113 1
 R10
 R11
@@ -326,7 +368,7 @@ R6
 r1
 !s85 0
 31
-R37
+R44
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v|
 !i113 1
@@ -375,6 +417,28 @@ R29
 !i113 1
 R10
 R11
+vtriStateBuffer
+R32
+!i10b 1
+!s100 8bPl@9fQo=3Q]0;Oz^O^g3
+I`G?8dNeOjJiK3k1`1XZ>63
+R1
+R2
+R33
+R34
+R35
+L0 100
+R6
+r1
+!s85 0
+31
+R36
+R37
+R38
+!i113 1
+R10
+R11
+ntri@state@buffer
 vvDFF
 R12
 !i10b 1
