@@ -63,12 +63,16 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	lab7_check_tb
 
-} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v {0 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module lab7_top
-** Error: (vlog-13069) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(22): near "EOF": syntax error, unexpected end of source code.
+-- Compiling module equals
+-- Compiling module triStateBuffer
 
-} {4.0 5.0} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
+Top level modules:
+	lab7_top
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module RAM
 
