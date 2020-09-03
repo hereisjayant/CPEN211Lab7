@@ -23,6 +23,14 @@
 //6. Saving result to Rd:                                State: sResultToRd
 //7. Moving sximm8 to Rn:                                State: sMovImToRn
 
+// States for LDR/STR:
+//For LDR:
+//1. sGetA
+//2. sAddImm5ToA
+//3. sLoadAddr
+//4. sLDR_MRead
+//5. sLDR_MDataToReg -> We might need to split this instruction
+
 
 
 //NOTE: Editing the IOs for lab 7
@@ -97,19 +105,29 @@ module control(   //inputs to fsm
   `define MWRITE      2'b10
 
   // state encoding for control FSM //Modified for lab 7
-  `define SW          5
-  `define sReset      5'b00_000
-  `define sIF1        5'b00_001
-  `define sIF2        5'b00_010
-  `define sUpdatePC   5'b00_011
-  `define sDecode     5'b00_100
-  `define sGetB       5'b00_101
-  `define sGetA       5'b00_110
-  `define sAND_ADD    5'b00_111
-  `define sMVN_MOV    5'b01_000
-  `define sGetStatus  5'b01_001
-  `define sResultToRd 5'b01_010
-  `define sMovImToRn  5'b01_011
+  `define SW                      5
+  `define sReset                  5'b00_000
+  `define sIF1                    5'b00_001
+  `define sIF2                    5'b00_010
+  `define sUpdatePC               5'b00_011
+  `define sDecode                 5'b00_100
+  `define sGetB                   5'b00_101
+  `define sGetA                   5'b00_110
+  `define sAND_ADD                5'b00_111
+  `define sMVN_MOV                5'b01_000
+  `define sGetStatus              5'b01_001
+  `define sResultToRd             5'b01_010
+  `define sMovImToRn              5'b01_011
+  `define sHALT                   5'b01_100
+  `define sAddImm5ToA             5'b01_101
+  `define sLoadAddr               5'b01_110
+  `define sLDR_MRead              5'b01_111
+  `define sLDR_MDataToReg         5'b10_000
+
+  //2. sAddImm5ToA
+  //3. sLoadAddr
+  //4. sLDR_MRead
+  //5. sLDR_MDataToReg
 
 //------------------------------------------------------------------------------
 
@@ -183,10 +201,21 @@ module control(   //inputs to fsm
       //for other instructions
       {`sDecode, 5'b110_00}: nextSignals = {`sGetB, 19'b0}; // sDecode->sGetB
       {`sDecode, 5'b101_xx}: nextSignals = {`sGetB, 19'b0};
-
+      //for LDR:
+      {`sDecode, 5'b011_00}: nextSignals = {`sGetA, 19'b0}; //sDecode-> sGetA
+      //For HALT:
+      {`sDecode, 5'b111_xx}: nextSignals = {`sHALT, 19'b0}; //sDecode->sHALT
 
 //------------------------------------------------------------------------------
 
+    //HALT State
+      {`sHALT, 5'bx}: nextSignals = {`sHALT, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                            1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                            1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            }; // sHALT->sHALT
+
+//------------------------------------------------------------------------------
     //MovImToRn State
       {`sMovImToRn, 5'bx}: nextSignals = {`sIF1, 2'b10, 1'b1,      // {state_next, vsel, write,
                                                 1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
@@ -239,6 +268,13 @@ module control(   //inputs to fsm
                                                1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                                };
 
+     //for LDR
+     {`sGetA, 5'b011_00}: nextSignals = {`sAddImm5ToA, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                              1'b1, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                              1'b0, 1'b0, 3'b100, 1'b0, //    loadc, loads, nsel, load_ir
+                                              1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                              };
+
 //------------------------------------------------------------------------------
 
     //MVN_MOV State (Cycle 2)
@@ -278,6 +314,49 @@ module control(   //inputs to fsm
                                               1'b0, 1'b0, 3'b010, 1'b0, //    loadc, loads, nsel, load_ir
                                               1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                               };
+
+//*****----------------------Additions for LDR/STR Instructions-----------******
+//------------------------------------------------------------------------------
+//sAddImm5ToA State for LDR/STR (Cycle 2)
+
+  //for LDR
+  {`sAddImm5ToA, 5'b011_00}: nextSignals = {`sLoadAddr, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b0, 1'b0, 1'b1,   //  loada, loadb, asel, bsel,
+                                          1'b1, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sAddImm5ToA->sLoadAddr
+
+//------------------------------------------------------------------------------
+//sLoadAddr STATE for LDR/STR (Cycle 3)
+
+  //for LDR
+  {`sLoadAddr, 5'b011_00}: nextSignals = {`sLDR_MRead, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                          1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b1, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sLoadAddr->sLDR_MRead
+
+//------------------------------------------------------------------------------
+
+//sLDR_MRead STATE for LDR (Cycle 4)
+
+  //for LDR
+  {`sLDR_MRead, 5'bx}: nextSignals = {`sLDR_MDataToReg, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                          1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b0, 1'b0, 1'b0, 1'b0, `MREAD //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sLDR_MRead->sLDR_MDataToReg
+
+//------------------------------------------------------------------------------
+
+//sLDR_MDataToReg STATE for LDR (Cycle 5)
+
+  //for LDR
+  {`sLDR_MDataToReg, 5'bx}: nextSignals = {`sIF1, 2'b11, 1'b1,      // {state_next, vsel, write,
+                                            1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                          1'b0, 1'b0, 3'b010, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b0, 1'b0, 1'b0, 1'b0, `MREAD //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sLDR_MDataToReg->sIF1
 
 //------------------------------------------------------------------------------
 

@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab6
 vAdder1
-Z0 !s110 1598553817
+Z0 !s110 1599133002
 !i10b 1
 !s100 oL@kYLU@a=66D=COTcC0j0
 Ig07RSjlG<0n`;0V8z9N6e0
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1598553817.000000
+Z7 !s108 1599133002.000000
 Z8 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/alu.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/alu.v|
 !i113 1
@@ -75,28 +75,28 @@ R10
 R11
 n@a@l@u
 vcontrol
-Z12 !s110 1598553814
+Z12 !s110 1599132999
 !i10b 1
-!s100 1bhjdZ7G1J@2WeRM>:fl:0
-IzQKPzMM7?l]HFXR?Td?cT0
+!s100 JJXS=i4P8^G`fjbIOJ@oM0
+IW5LXcPCc=d;jlA>BT@33i0
 R1
 R2
-Z13 w1598553749
+Z13 w1599130571
 Z14 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v
 Z15 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v
-L0 29
+L0 37
 R6
 r1
 !s85 0
 31
-Z16 !s108 1598553814.000000
+Z16 !s108 1599132998.000000
 Z17 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v|
 Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v|
 !i113 1
 R10
 R11
 vcontrol_tb
-!s110 1598689497
+!s110 1599133003
 !i10b 1
 !s100 U:2N:g^c?VeJ^Q6MF]RzN2
 IIB]?XCfO?FObPg9JLPjhR3
@@ -110,20 +110,20 @@ R6
 r1
 !s85 0
 31
-!s108 1598689497.000000
+R7
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v|
 !i113 1
 R10
 R11
 vcpu
-!s110 1598701691
+R0
 !i10b 1
-!s100 ozel^VcGYGR5P;6SH=NlZ3
-IkAISaX>TU?D`CBFY:kG`o3
+!s100 Oi1dBEeO=08?aT_a5[=UA3
+I^HFK]9IeajW68diSFM`Yd1
 R1
 R2
-w1598689707
+w1599131949
 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
 L0 7
@@ -131,35 +131,35 @@ R6
 r1
 !s85 0
 31
-!s108 1598701691.000000
+R7
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v|
 !i113 1
 R10
 R11
 vdatapath
-R12
+Z19 !s110 1599132998
 !i10b 1
 !s100 UBzJH^4@Wbn<dfYElENVC2
 IAanda^]D[]FzAz4^3<:oA3
 R1
 R2
-Z19 w1597317306
-Z20 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
-Z21 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
+Z20 w1597317306
+Z21 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
+Z22 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
 L0 13
 R6
 r1
 !s85 0
 31
-Z22 !s108 1598553813.000000
+R16
 Z23 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v|
 Z24 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v|
 !i113 1
 R10
 R11
 vDec
-Z25 !s110 1598553816
+Z25 !s110 1599133001
 !i10b 1
 !s100 h9leJoEefIK7GbYHiScAc1
 I9=dW>DWH?:T?PUz2[HfFP3
@@ -173,7 +173,7 @@ R6
 r1
 !s85 0
 31
-Z29 !s108 1598553816.000000
+Z29 !s108 1599133001.000000
 Z30 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v|
 Z31 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v|
 !i113 1
@@ -181,7 +181,7 @@ R10
 R11
 n@dec
 vequals
-Z32 !s110 1598701686
+Z32 !s110 1599133000
 !i10b 1
 !s100 Y@<0LCoT4FonC6]^5XP431
 I`J8]10n@fiHN`=Ejl?>n23
@@ -195,7 +195,7 @@ R6
 r1
 !s85 0
 31
-Z36 !s108 1598701685.000000
+Z36 !s108 1599133000.000000
 Z37 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v|
 Z38 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v|
 !i113 1
@@ -216,21 +216,21 @@ R6
 r1
 !s85 0
 31
-R16
-Z42 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
-Z43 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
+Z42 !s108 1599132999.000000
+Z43 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
+Z44 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v|
 !i113 1
 R10
 R11
 n@instruction@decoder
 vlab7_check_tb
-!s110 1598553815
+R12
 !i10b 1
 !s100 NdR6i6YCf5Rj<X`6^n5FR0
 IHi1<?YneMK7QmAT<Ldk?z3
 R1
 R2
-w1592377092
+w1599132718
 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v
 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v
 L0 1
@@ -238,9 +238,30 @@ R6
 r1
 !s85 0
 31
-Z44 !s108 1598553815.000000
+R42
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v|
+!i113 1
+R10
+R11
+vlab7_stage2_tb
+!s110 1599133043
+!i10b 1
+!s100 ngNcRhb=K6Sho;lXX]@NU3
+IBH1>C1IhKSalfZzITVee]0
+R1
+R2
+w1599132825
+8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v
+FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1599133043.000000
+!s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v|
 !i113 1
 R10
 R11
@@ -266,21 +287,21 @@ R38
 R10
 R11
 vMux2a
-R12
+R19
 !i10b 1
 !s100 e[<A2XP?LkVU91;ViV51:2
 I><P<X3Tb<9<QgHzeP:H?W0
 R1
 R2
-R19
 R20
 R21
+R22
 L0 162
 R6
 r1
 !s85 0
 31
-R22
+R16
 R23
 R24
 !i113 1
@@ -302,29 +323,29 @@ R6
 r1
 !s85 0
 31
-R16
 R42
 R43
+R44
 !i113 1
 R10
 R11
 n@mux3@h
 vMux4b
-R12
+R19
 !i10b 1
 !s100 ;HW;e=anB8WbfW@S_dRmA1
 IZL>dBel;0^LcDJGHP35S:0
 R1
 R2
-R19
 R20
 R21
+R22
 L0 175
 R6
 r1
 !s85 0
 31
-R22
+R16
 R23
 R24
 !i113 1
@@ -356,11 +377,11 @@ n@mux8
 vRAM
 R25
 !i10b 1
-!s100 lW6P9KhVeODK__G^Sb@UW1
-IEW1oClIVJLTMX?_gL1o>G2
+!s100 hEeO^7fVdWSNec[Red1og0
+IVB7MfegChlWZS^Z3UTI=O0
 R1
 R2
-w1597648058
+w1599132468
 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
 L0 10
@@ -368,7 +389,7 @@ R6
 r1
 !s85 0
 31
-R44
+R36
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v|
 !i113 1
@@ -397,7 +418,7 @@ R31
 R10
 R11
 vshifter
-R0
+R25
 !i10b 1
 !s100 m>Kz=dQgMg[AlTDBgH21m2
 InjU1l=8g8AHc1?7]BZ0RR2
@@ -442,14 +463,14 @@ ntri@state@buffer
 vvDFF
 R12
 !i10b 1
-!s100 oOXGV?9_gkE7Doj41M];A2
-I6b[Rlbk?4SQA4=E;4RUHd0
+!s100 <WU@fiG>WFL1:TZ4V^QL:3
+Ik8ejAQ;55Z`zTA9cfNzTG2
 R1
 R2
 R13
 R14
 R15
-L0 302
+L0 381
 R6
 r1
 !s85 0

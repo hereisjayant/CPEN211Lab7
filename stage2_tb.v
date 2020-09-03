@@ -1,4 +1,4 @@
-module lab7_check_tb;
+module lab7_stage2_tb;
   reg [3:0] KEY;
   reg [9:0] SW;
   wire [9:0] LEDR;

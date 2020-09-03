@@ -8,8 +8,8 @@
 // 2. "Example 12-29: Verilog HDL RAM Initialized with the readmemb Command"
 
 module RAM(clk,read_address,write_address,write,din,dout);
-  parameter data_width = 32;
-  parameter addr_width = 4;
+  parameter data_width = 16;
+  parameter addr_width = 9;
   parameter filename = "data.txt";
 
   input clk;

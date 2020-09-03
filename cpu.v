@@ -35,7 +35,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 
   //To addr_sel MUX:
     wire addr_sel;  //from FSM
-    wire [8:0] pcToAddrSel;  //from PC
+    wire [8:0] PC;  //from PC
     wire [8:0] dataAdressToAddrSel; //from DataAdress
 
   //To PC reset MUX:
@@ -43,7 +43,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 
   //To ProgramCounter
     wire load_pc;  //from FSM
-    wire next_pc;  //from resetPCMUX
+    wire [8:0] next_pc;  //from resetPCMUX
 
   //To DataAdress Register
     wire [8:0] datapath_outToDataAddress;
@@ -91,13 +91,13 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 //------------------------------------------------------------------------------
 
   //PC Reset Mux
-  Mux2a #(9) PCResetMux(.a1(9'b0), .a0(pcToAddrSel + 9'b1),
+  Mux2a #(9) PCResetMux(.a1(9'b0), .a0(PC + 9'b1),
                         .s(reset_pc), .b(next_pc));
 
 //------------------------------------------------------------------------------
 
   //program counter
-  vDFFE #(9) ProgramCounter(clk, load_pc, next_pc, pcToAddrSel);
+  vDFFE #(9) ProgramCounter(clk, load_pc, next_pc, PC);
 
 //------------------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 //------------------------------------------------------------------------------
 
   //Adress Selecting Mux
-  Mux2a #(9) addr_selMux( pcToAddrSel, dataAdressToAddrSel, addr_sel, mem_addr);
+  Mux2a #(9) addr_selMux( PC, dataAdressToAddrSel, addr_sel, mem_addr);
 
 //------------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 The LDR instruction:
   Cycles:
-  1. Read the contents of Rn: nsel->100 Rn
+  1. Read the contents of Rn: nsel->100 Rn   --->this is the same as sGetA
                               loada-> 1
 
   2. Add the sximm5 value: asel-> 0
