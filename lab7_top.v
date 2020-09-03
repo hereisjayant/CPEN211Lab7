@@ -32,6 +32,10 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
   wire equalsMWrite;
   wire msel;
 
+  //Memory mapped IO:
+  wire switchEnable;
+  wire ledEnable;
+
 //------------------------------------------------------------------------------
 
 //Declared modules:
@@ -77,7 +81,26 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
 //------------------------------------------------------------------------------
 
   //triStateBuffer:
-  triStateBuffer TriSB(dout, equalsMRead && msel, read_data);
+  triStateBuffer TriSB_for_Dout(dout, equalsMRead && msel, read_data);
+
+//------------------------------------------------------------------------------
+
+  //Enable for switches:
+  enableSwitches enaSW(mem_cmd, mem_addr, switchEnable);
+
+  //Enable for LEDs:
+  enableLEDs enaLEDs(mem_cmd, mem_addr, ledEnable);
+
+//------------------------------------------------------------------------------
+
+  //triStateBuffer for Memory mapped IOs:
+
+  //for Switches:
+  triStateBuffer tsb_for_switches({8'b0,SW[7:0]}, switchEnable, read_data);
+
+//------------------------------------------------------------------------------
+
+  vDFFE #(8) Register_for_LEDS(~KEY[0], ledEnable, write_data, LEDR[7:0]) ; 
 
 //------------------------------------------------------------------------------
 
@@ -96,6 +119,25 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     assign out = (ain==bin) ? 1'b1:1'b0;
 
   endmodule
+
+  module enableSwitches(cmd, address, enable);
+    input [1:0] cmd;
+    input [8:0] address;
+    output enable;
+
+    assign enable = (cmd==`MREAD && address==0'h140) ? 1'b1:1'b0;
+
+  endmodule
+
+  module enableLEDs(cmd, address, enable);
+    input [1:0] cmd;
+    input [8:0] address;
+    output enable;
+
+    assign enable = (cmd==`MWRITE && address==0'h100) ? 1'b1:1'b0;
+
+  endmodule
+
 
   module triStateBuffer(in, enable, out);
     parameter k = 16;

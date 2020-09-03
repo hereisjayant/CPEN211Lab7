@@ -420,3 +420,40 @@ run -all
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(61)
 #    Time: 335 ps  Iteration: 2  Instance: /lab7_stage2_tb
 # Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 61
+quit -sim
+# End time: 22:53:09 on Sep 03,2020, Elapsed time: 5:45:31
+# Errors: 6, Warnings: 1
+# Compile of lab7_top.v was successful.
+vsim -gui work.lab7_check_tb
+# vsim -gui work.lab7_check_tb 
+# Start time: 22:53:33 on Sep 03,2020
+# Loading work.lab7_check_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(103): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
+#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/Register_for_LEDS File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(61)
+#    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 61

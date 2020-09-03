@@ -180,24 +180,68 @@ Z32 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/
 R10
 R11
 n@dec
-vequals
-Z33 !s110 1599149514
+venableLEDs
+Z33 !s110 1599153794
 !i10b 1
-!s100 Y@<0LCoT4FonC6]^5XP431
-I`J8]10n@fiHN`=Ejl?>n23
+!s100 @IlCI4`InC=PgDo_9<9CV2
+I<V`jH7:]^[N2[:6Y>`Z5J0
 R1
 R2
-Z34 w1598701675
+Z34 w1599153773
 Z35 8C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
 Z36 FC:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
-L0 91
+L0 132
 R6
 r1
 !s85 0
 31
-Z37 !s108 1599149514.000000
+Z37 !s108 1599153794.000000
 Z38 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v|
 Z39 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v|
+!i113 1
+R10
+R11
+nenable@l@e@ds
+venableSwitches
+R33
+!i10b 1
+!s100 Qj9[B5[c1[Oc0Fj;3H>QF2
+IoL]CbCD4FMMJ7AYlfY6Ug1
+R1
+R2
+R34
+R35
+R36
+L0 123
+R6
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R10
+R11
+nenable@switches
+vequals
+R33
+!i10b 1
+!s100 @Whn>LAPhSzN577?7<JW[3
+ISX0emc@hBZ3__?LR]M@H]0
+R1
+R2
+R34
+R35
+R36
+L0 114
+R6
+r1
+!s85 0
+31
+R37
+R38
+R39
 !i113 1
 R10
 R11
@@ -224,7 +268,7 @@ R10
 R11
 n@instruction@decoder
 vlab7_check_tb
-R33
+Z45 !s110 1599149514
 !i10b 1
 !s100 NdR6i6YCf5Rj<X`6^n5FR0
 IHi1<?YneMK7QmAT<Ldk?z3
@@ -268,8 +312,8 @@ R11
 vlab7_top
 R33
 !i10b 1
-!s100 52Bc?W3anNM=[<Ji43SAg2
-I3bf[PX8;cSb9@omVZ?XcD3
+!s100 hA<Tij?;@U:;[]8]elhMS0
+Innz^=gI4az?3AjBkT`1aV1
 R1
 R2
 R34
@@ -375,7 +419,7 @@ R10
 R11
 n@mux8
 vRAM
-R33
+R45
 !i10b 1
 !s100 hEeO^7fVdWSNec[Red1og0
 IVB7MfegChlWZS^Z3UTI=O0
@@ -389,7 +433,7 @@ R6
 r1
 !s85 0
 31
-R37
+!s108 1599149514.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v|
 !i113 1
@@ -441,14 +485,14 @@ R11
 vtriStateBuffer
 R33
 !i10b 1
-!s100 8bPl@9fQo=3Q]0;Oz^O^g3
-I`G?8dNeOjJiK3k1`1XZ>63
+!s100 E3_io7S:jBM<M0A:YO]Nf3
+InH>N=TB:;HRDGP=l5zKkk0
 R1
 R2
 R34
 R35
 R36
-L0 100
+L0 142
 R6
 r1
 !s85 0
