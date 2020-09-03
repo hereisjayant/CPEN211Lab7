@@ -457,3 +457,5 @@ run -all
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(61)
 #    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
 # Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 61
+# End time: 22:56:50 on Sep 03,2020, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 1
