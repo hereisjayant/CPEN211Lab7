@@ -111,6 +111,8 @@ module control(   //inputs to fsm
   `define sIF2                    5'b00_010
   `define sUpdatePC               5'b00_011
   `define sDecode                 5'b00_100
+
+
   `define sGetB                   5'b00_101
   `define sGetA                   5'b00_110
   `define sAND_ADD                5'b00_111
@@ -118,11 +120,16 @@ module control(   //inputs to fsm
   `define sGetStatus              5'b01_001
   `define sResultToRd             5'b01_010
   `define sMovImToRn              5'b01_011
-  `define sHALT                   5'b01_100
+
+
+  `define sHALT                   5'b01_100 //For STR/LDR
   `define sAddImm5ToA             5'b01_101
   `define sLoadAddr               5'b01_110
   `define sLDR_MRead              5'b01_111
   `define sLDR_MDataToReg         5'b10_000
+  `define sSTR_RdToB              5'b10_001
+  `define sSTR_BtoDOUT            5'b10_010
+  `define sSTR_MWrite             5'b10_011
 
   //2. sAddImm5ToA
   //3. sLoadAddr
@@ -203,6 +210,8 @@ module control(   //inputs to fsm
       {`sDecode, 5'b101_xx}: nextSignals = {`sGetB, 19'b0};
       //for LDR:
       {`sDecode, 5'b011_00}: nextSignals = {`sGetA, 19'b0}; //sDecode-> sGetA
+      //for STR:
+      {`sDecode, 5'b100_00}: nextSignals = {`sGetA, 19'b0}; //sDecode-> sGetA
       //For HALT:
       {`sDecode, 5'b111_xx}: nextSignals = {`sHALT, 19'b0}; //sDecode->sHALT
 
@@ -275,6 +284,13 @@ module control(   //inputs to fsm
                                               1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                               };
 
+    //for STR
+    {`sGetA, 5'b100_00}: nextSignals = {`sAddImm5ToA, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                             1'b1, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                             1'b0, 1'b0, 3'b100, 1'b0, //    loadc, loads, nsel, load_ir
+                                             1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                             };
+
 //------------------------------------------------------------------------------
 
     //MVN_MOV State (Cycle 2)
@@ -326,6 +342,13 @@ module control(   //inputs to fsm
                                           1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                           };  //sAddImm5ToA->sLoadAddr
 
+  //for STR
+  {`sAddImm5ToA, 5'b100_00}: nextSignals = {`sLoadAddr, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b0, 1'b0, 1'b1,   //  loada, loadb, asel, bsel,
+                                          1'b1, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sAddImm5ToA->sLoadAddr
+
 //------------------------------------------------------------------------------
 //sLoadAddr STATE for LDR/STR (Cycle 3)
 
@@ -335,6 +358,13 @@ module control(   //inputs to fsm
                                           1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
                                           1'b1, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                           };  //sLoadAddr->sLDR_MRead
+
+  //for STR
+  {`sLoadAddr, 5'b100_00}: nextSignals = {`sSTR_RdToB, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                          1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b1, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sLoadAddr->sSTR_RdToB
 
 //------------------------------------------------------------------------------
 
@@ -360,6 +390,38 @@ module control(   //inputs to fsm
 
 //------------------------------------------------------------------------------
 
+//sSTR_RdToB STATE for STR instruction (cycle 4)
+
+  //for STR
+  {`sSTR_RdToB, 5'bx}: nextSignals = {`sSTR_BtoDOUT, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b1, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                          1'b0, 1'b0, 3'b010, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sSTR_RdToB->sSTR_BtoDOUT
+
+//------------------------------------------------------------------------------
+
+//sSTR_BtoDOUT STATE for STR instruction (cycle 5)
+
+  //for STR
+  {`sSTR_BtoDOUT, 5'bx}: nextSignals = {`sSTR_MWrite, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b0, 1'b1, 1'b0,   //  loada, loadb, asel, bsel,
+                                          1'b1, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b0, 1'b0, 1'b0, 1'b0, 2'b0 //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sSTR_BtoDOUT->sSTR_MWrite
+
+//------------------------------------------------------------------------------
+
+//sSTR_MWrite STATE for STR instruction (cycle 6)
+
+  //for STR
+  {`sSTR_MWrite, 5'bx}: nextSignals = {`sIF1, 2'b00, 1'b0,      // {state_next, vsel, write,
+                                          1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                          1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                          1'b0, 1'b0, 1'b0, 1'b0, `MWRITE //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                          };  //sSTR_BtoDOUT->sSTR_MWrite
+
+//------------------------------------------------------------------------------
 
       default:     nextSignals = {{`SW{1'bx}},{19{1'bx}}}; // only get here if present_state, s, or zero are x’s
     endcase

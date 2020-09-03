@@ -5,13 +5,30 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	shifter
 
-} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm.v
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module control
--- Compiling module vDFF
+-- Compiling module datapath
+-- Compiling module Mux2a
+-- Compiling module Mux4b
 
 Top level modules:
-	control
+	datapath
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_top
+-- Compiling module equals
+-- Compiling module triStateBuffer
+
+Top level modules:
+	lab7_top
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_check_tb
+
+Top level modules:
+	lab7_check_tb
 
 } {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/alu.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/alu.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -21,6 +38,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	ALU
+
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_stage2_tb
+
+Top level modules:
+	lab7_stage2_tb
 
 } {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -32,28 +56,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	regfile
 
-} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module datapath
--- Compiling module Mux2a
--- Compiling module Mux4b
+-- Compiling module InstructionDecoder
+-- Compiling module Mux3H
 
 Top level modules:
-	datapath
-
-} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module control_tb
-
-Top level modules:
-	control_tb
-
-} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module RAM
-
-Top level modules:
-	RAM
+	InstructionDecoder
 
 } {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -62,21 +71,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	cpu
 
-} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module lab7_top
--- Compiling module equals
--- Compiling module triStateBuffer
+-- Compiling module RAM
 
 Top level modules:
-	lab7_top
+	RAM
 
-} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/instructionDecoder.v
+} {} {}} C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v {1 {vlog -work work -stats=none C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/fsm_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module InstructionDecoder
--- Compiling module Mux3H
+-- Compiling module control_tb
 
 Top level modules:
-	InstructionDecoder
+	control_tb
 
 } {} {}}

@@ -40,6 +40,10 @@ The STR instruction:
 
   3. Now load the result to dataAdress: load_addr->1
 
+sSTR_RdToB
+sSTR_BtoDOUT
+sSTR_MWrite
+
   4a. Now read the contents of Register Rd and get the output on datapath_out:
                           nsel->010
                           loadb = 1

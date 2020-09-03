@@ -365,3 +365,58 @@ run -all
 # Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
 # Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
 # Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position 0  sim:/lab7_stage2_tb/DUT/CPU/DP/REGFILE/REG1/out
+restart -f
+run -all
+# FAILED: PC should be 5.
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(55)
+#    Time: 245 ps  Iteration: 2  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 55
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(61)
+#    Time: 335 ps  Iteration: 2  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 61
+add wave -position 2  sim:/lab7_stage2_tb/DUT/CPU/FSM/STATE/D
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem
+restart -f
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(61)
+#    Time: 335 ps  Iteration: 2  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 61
