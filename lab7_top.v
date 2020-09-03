@@ -100,7 +100,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
 
 //------------------------------------------------------------------------------
 
-  vDFFE #(8) Register_for_LEDS(~KEY[0], ledEnable, write_data, LEDR[7:0]) ; 
+  vDFFE #(8) Register_for_LEDS(~KEY[0], ledEnable, write_data, LEDR[7:0]) ;
 
 //------------------------------------------------------------------------------
 
@@ -125,7 +125,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     input [8:0] address;
     output enable;
 
-    assign enable = (cmd==`MREAD && address==0'h140) ? 1'b1:1'b0;
+    assign enable = (cmd==`MREAD && address==8'h140) ? 1'b1:1'b0;
 
   endmodule
 
@@ -134,7 +134,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     input [8:0] address;
     output enable;
 
-    assign enable = (cmd==`MWRITE && address==0'h100) ? 1'b1:1'b0;
+    assign enable = (cmd==`MWRITE && address==8'h100) ? 1'b1:1'b0;
 
   endmodule
 
