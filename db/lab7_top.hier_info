@@ -53,20 +53,20 @@ HEX3[3] <= <GND>
 HEX3[4] <= <GND>
 HEX3[5] <= <GND>
 HEX3[6] <= <GND>
-HEX4[0] <= <GND>
-HEX4[1] <= <GND>
-HEX4[2] <= <GND>
-HEX4[3] <= <GND>
-HEX4[4] <= <GND>
-HEX4[5] <= <GND>
-HEX4[6] <= <GND>
-HEX5[0] <= cpu:CPU.Z
+HEX4[0] <= <VCC>
+HEX4[1] <= <VCC>
+HEX4[2] <= <VCC>
+HEX4[3] <= <VCC>
+HEX4[4] <= <VCC>
+HEX4[5] <= <VCC>
+HEX4[6] <= <VCC>
+HEX5[0] <= <GND>
 HEX5[1] <= <GND>
 HEX5[2] <= <GND>
-HEX5[3] <= cpu:CPU.V
+HEX5[3] <= <GND>
 HEX5[4] <= <GND>
 HEX5[5] <= <GND>
-HEX5[6] <= cpu:CPU.N
+HEX5[6] <= <GND>
 
 
 |lab7_top|cpu:CPU

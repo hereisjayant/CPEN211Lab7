@@ -1,432 +1,16 @@
 # Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # OpenFile C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7.mpf
 # Loading project lab7
-# Compile of cpu.v was successful.
-# Compile of fsm.v was successful.
+# Compile of lab7_top.v failed with 67 errors.
+# Compile of lab7_top.v failed with 67 errors.
+# Compile of lab7_top.v failed with 67 errors.
+# Compile of lab7_top.v failed with 37 errors.
+# Compile of lab7_top.v failed with 1 errors.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of lab7_top.v was successful with warnings.
 vsim -gui work.lab7_check_tb
 # vsim -gui work.lab7_check_tb 
-# Start time: 16:41:50 on Sep 03,2020
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# ** Warning: (vsim-3008) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(32): [CNNODP] - Component name (PC) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v
-# ** Error: (vsim-3043) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(32): Unresolved reference to 'PC' in DUT.CPU.PC.
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v(94): [PCDPC] - Port size (9) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v(162).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/CPU/PCResetMux File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v(100): [PCDPC] - Port size (9) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/CPU/ProgramCounter File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'read_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'write_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'din'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'dout'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# Error loading design
-# End time: 16:41:51 on Sep 03,2020, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 7
-# Compile of cpu.v was successful.
-vsim -gui work.lab7_check_tb
-# vsim -gui work.lab7_check_tb 
-# Start time: 16:45:29 on Sep 03,2020
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v(94): [PCDPC] - Port size (9) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v(162).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/CPU/PCResetMux File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v(100): [PCDPC] - Port size (9) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/CPU/ProgramCounter File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'read_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'write_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'din'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'dout'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-quit -sim
-# End time: 16:46:12 on Sep 03,2020, Elapsed time: 0:00:43
-# Errors: 0, Warnings: 6
-vsim -gui work.lab7_check_tb
-# vsim -gui work.lab7_check_tb 
-# Start time: 16:50:50 on Sep 03,2020
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v(94): [PCDPC] - Port size (9) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v(162).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/CPU/PCResetMux File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/datapath.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/cpu.v(100): [PCDPC] - Port size (9) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/CPU/ProgramCounter File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'read_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'write_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'din'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'dout'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# Compile of cpu.v was successful.
-vsim -gui work.lab7_check_tb
-# End time: 16:52:51 on Sep 03,2020, Elapsed time: 0:02:01
-# Errors: 0, Warnings: 6
-# vsim -gui work.lab7_check_tb 
-# Start time: 16:52:51 on Sep 03,2020
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'read_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (4) does not match connection size (9) for port 'write_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'din'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (32) does not match connection size (16) for port 'dout'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.lab7_check_tb
-# End time: 16:57:25 on Sep 03,2020, Elapsed time: 0:04:34
-# Errors: 0, Warnings: 4
-# vsim -gui work.lab7_check_tb 
-# Start time: 16:57:25 on Sep 03,2020
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (8) does not match connection size (9) for port 'read_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(70): [PCDPC] - Port size (8) does not match connection size (9) for port 'write_address'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# 11 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "data.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(24)
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM
-# FAILED: mem[0] wrong; please set data.txt using Figure 6
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
-# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# 11 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-add wave -position end sim:/lab7_check_tb/*
-add wave -position end sim:/lab7_check_tb/DUT/*
-add wave -position end sim:/lab7_check_tb/DUT/CPU/*
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "data.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/ram.v(24)
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/MEM
-# FAILED: R0 should be 5.
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(41)
-#    Time: 95 ps  Iteration: 2  Instance: /lab7_check_tb
-# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 41
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# 11 compiles, 0 failed with no errors.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# 11 compiles, 0 failed with no errors.
-quit -sim
-# End time: 17:07:18 on Sep 03,2020, Elapsed time: 0:09:53
-# Errors: 0, Warnings: 4
-# Compile of stage2_tb.v was successful.
-vsim -gui work.lab7_stage2_tb
-# vsim -gui work.lab7_stage2_tb 
-# Start time: 17:07:38 on Sep 03,2020
-# Loading work.lab7_stage2_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-add wave -position end sim:/lab7_stage2_tb/DUT/CPU/*
-run -all
-# FAILED: PC should be 5.
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(55)
-#    Time: 245 ps  Iteration: 2  Instance: /lab7_stage2_tb
-# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 55
-add wave -position 0  sim:/lab7_stage2_tb/err
-restart -f
-run -all
-# FAILED: PC should be 5.
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(55)
-#    Time: 245 ps  Iteration: 2  Instance: /lab7_stage2_tb
-# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 55
-add wave -position 0  sim:/lab7_stage2_tb/DUT/CPU/FSM/STATE/Q
-restart -f
-run -all
-# FAILED: PC should be 5.
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(55)
-#    Time: 245 ps  Iteration: 2  Instance: /lab7_stage2_tb
-# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 55
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-add wave -position 0  sim:/lab7_stage2_tb/DUT/CPU/DP/REGFILE/REG1/out
-restart -f
-run -all
-# FAILED: PC should be 5.
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(55)
-#    Time: 245 ps  Iteration: 2  Instance: /lab7_stage2_tb
-# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 55
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# Compile of stage2_tb.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab7_stage2_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-run -all
-# INTERFACE OK
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(61)
-#    Time: 335 ps  Iteration: 2  Instance: /lab7_stage2_tb
-# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 61
-add wave -position 2  sim:/lab7_stage2_tb/DUT/CPU/FSM/STATE/D
-add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem
-restart -f
-run -all
-# INTERFACE OK
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v(61)
-#    Time: 335 ps  Iteration: 2  Instance: /lab7_stage2_tb
-# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/stage2_tb.v line 61
-quit -sim
-# End time: 22:53:09 on Sep 03,2020, Elapsed time: 5:45:31
-# Errors: 6, Warnings: 1
-# Compile of lab7_top.v was successful.
-vsim -gui work.lab7_check_tb
-# vsim -gui work.lab7_check_tb 
-# Start time: 22:53:33 on Sep 03,2020
+# Start time: 15:50:31 on Sep 04,2020
 # Loading work.lab7_check_tb
 # Loading work.lab7_top
 # Loading work.cpu
@@ -450,12 +34,151 @@ vsim -gui work.lab7_check_tb
 # Loading work.triStateBuffer
 # Loading work.enableSwitches
 # Loading work.enableLEDs
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(103): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
+# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(137): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
 #    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/Register_for_LEDS File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
+run -all
+# FAILED: mem[0] wrong; please set data.txt using Figure 6
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
+#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
+restart -f
+# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(137): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
+#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/Register_for_LEDS File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
+restart -f
+# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(137): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
+#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/Register_for_LEDS File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_check_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0] wrong; please set data.txt using Figure 6
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
+#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
+restart -f
+restart -f
 run -all
 # INTERFACE OK
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(61)
 #    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
 # Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 61
-# End time: 22:56:50 on Sep 03,2020, Elapsed time: 0:03:17
-# Errors: 0, Warnings: 1
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_check_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0] wrong; please set data.txt using Figure 6
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
+#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_check_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: R0 should be 5.
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(41)
+#    Time: 95 ps  Iteration: 2  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 41
+# End time: 16:00:50 on Sep 04,2020, Elapsed time: 0:10:19
+# Errors: 0, Warnings: 3
