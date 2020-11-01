@@ -1,52 +1,6 @@
 # Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
-# OpenFile C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7.mpf
+# OpenFile C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7.mpf
 # Loading project lab7
-# Compile of lab7_top.v failed with 67 errors.
-# Compile of lab7_top.v failed with 67 errors.
-# Compile of lab7_top.v failed with 67 errors.
-# Compile of lab7_top.v failed with 37 errors.
-# Compile of lab7_top.v failed with 1 errors.
-# Compile of lab7_top.v was successful with warnings.
-# Compile of lab7_top.v was successful with warnings.
-vsim -gui work.lab7_check_tb
-# vsim -gui work.lab7_check_tb 
-# Start time: 15:50:31 on Sep 04,2020
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(137): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/Register_for_LEDS File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
-run -all
-# FAILED: mem[0] wrong; please set data.txt using Figure 6
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
-# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
-restart -f
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(137): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/Register_for_LEDS File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
-restart -f
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_top.v(137): [PCDPC] - Port size (8) does not match connection size (16) for port 'in'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v(73).
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb/DUT/Register_for_LEDS File: C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/regfile.v
 # Compile of datapath.v was successful.
 # Compile of fsm.v was successful.
 # Compile of instructionDecoder.v was successful.
@@ -60,7 +14,44 @@ restart -f
 # Compile of fsm_tb.v was successful.
 # Compile of stage2_tb.v was successful.
 # 12 compiles, 0 failed with no errors.
-restart -f
+vsim -gui work.lab7_check_tb
+# vsim -gui work.lab7_check_tb 
+# Start time: 16:40:11 on Oct 31,2020
+# Loading work.lab7_check_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+add wave -position end sim:/lab7_check_tb/DUT/*
+run -all
+# FAILED: mem[0] wrong; please set data.txt using Figure 6
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
+#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
+quit -sim
+# End time: 16:42:45 on Oct 31,2020, Elapsed time: 0:02:34
+# Errors: 0, Warnings: 0
+vsim -gui work.lab7_check_tb
+# vsim -gui work.lab7_check_tb 
+# Start time: 16:46:29 on Oct 31,2020
 # Loading work.lab7_check_tb
 # Loading work.lab7_top
 # Loading work.cpu
@@ -85,100 +76,14 @@ restart -f
 # Loading work.enableSwitches
 # Loading work.enableLEDs
 run -all
-# FAILED: mem[0] wrong; please set data.txt using Figure 6
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
-# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
-restart -f
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(61)
+#    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 61
+add wave -position end sim:/lab7_check_tb/DUT/*
 restart -f
 run -all
 # INTERFACE OK
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(61)
 #    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
 # Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 61
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful with warnings.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# Compile of stage2_tb.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-run -all
-# FAILED: mem[0] wrong; please set data.txt using Figure 6
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(19)
-#    Time: 0 ps  Iteration: 0  Instance: /lab7_check_tb
-# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 19
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab7_autograder_check.v was successful.
-# Compile of lab7_top.v was successful with warnings.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of fsm_tb.v was successful.
-# Compile of stage2_tb.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab7_check_tb
-# Loading work.lab7_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-run -all
-# FAILED: R0 should be 5.
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v(41)
-#    Time: 95 ps  Iteration: 2  Instance: /lab7_check_tb
-# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211/programs/lab7/lab7_autograder_check.v line 41
-# End time: 16:00:50 on Sep 04,2020, Elapsed time: 0:10:19
-# Errors: 0, Warnings: 3
