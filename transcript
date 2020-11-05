@@ -339,3 +339,220 @@ run -all
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
 #    Time: 1010 ps  Iteration: 0  Instance: /lab7_stage2_tb
 # Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v failed with 1 errors.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 1010 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 1010 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 1010 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 1010 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+quit -sim
+# End time: 18:33:23 on Nov 05,2020, Elapsed time: 0:48:34
+# Errors: 0, Warnings: 1
+vsim -gui work.lab7_check_tb
+# vsim -gui work.lab7_check_tb 
+# Start time: 18:33:35 on Nov 05,2020
+# Loading work.lab7_check_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7_autograder_check.v(61)
+#    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7_autograder_check.v line 61
+# End time: 18:33:54 on Nov 05,2020, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0

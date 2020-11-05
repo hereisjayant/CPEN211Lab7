@@ -168,7 +168,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     input [8:0] address;
     output enable;
 
-    assign enable <= (cmd==`MWRITE && address==8'h100) ? 1'b1:1'b0;
+    assign enable = (cmd==`MWRITE && address==9'h100) ? 1'b1:1'b0;
 
   endmodule
 
