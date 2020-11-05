@@ -1,3 +1,341 @@
 # Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # OpenFile C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7.mpf
 # Loading project lab7
+vsim -gui work.lab7_stage2_tb
+# vsim -gui work.lab7_stage2_tb 
+# Start time: 11:24:00 on Nov 05,2020
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:proc:11: ::QStructure::sort .main_pane.structure 0 descending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 descending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 descending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 descending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+add wave -position end  sim:/lab7_stage2_tb/DUT/KEY
+add wave -position end  sim:/lab7_stage2_tb/DUT/SW
+add wave -position end  sim:/lab7_stage2_tb/DUT/LEDR
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX0
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX1
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX2
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX3
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX4
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX5
+add wave -position end  sim:/lab7_stage2_tb/DUT/dout
+add wave -position end  sim:/lab7_stage2_tb/DUT/read_data
+add wave -position end  sim:/lab7_stage2_tb/DUT/mem_cmd
+add wave -position end  sim:/lab7_stage2_tb/DUT/mem_addr
+add wave -position end  sim:/lab7_stage2_tb/DUT/write_data
+add wave -position end  sim:/lab7_stage2_tb/DUT/N
+add wave -position end  sim:/lab7_stage2_tb/DUT/V
+add wave -position end  sim:/lab7_stage2_tb/DUT/Z
+add wave -position end  sim:/lab7_stage2_tb/DUT/equalsMRead
+add wave -position end  sim:/lab7_stage2_tb/DUT/equalsMWrite
+add wave -position end  sim:/lab7_stage2_tb/DUT/msel
+add wave -position end  sim:/lab7_stage2_tb/DUT/switchEnable
+add wave -position end  sim:/lab7_stage2_tb/DUT/ledEnable
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 100 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# WARNING: No extended dataflow license exists
+quit -sim
+vsim -gui work.lab7_check_tb
+# End time: 17:19:53 on Nov 05,2020, Elapsed time: 5:55:53
+# Errors: 14, Warnings: 1
+# vsim -gui work.lab7_check_tb 
+# Start time: 17:19:53 on Nov 05,2020
+# Loading work.lab7_check_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+add wave -position end  sim:/lab7_check_tb/DUT/KEY
+add wave -position end  sim:/lab7_check_tb/DUT/SW
+add wave -position end  sim:/lab7_check_tb/DUT/LEDR
+add wave -position end  sim:/lab7_check_tb/DUT/HEX0
+add wave -position end  sim:/lab7_check_tb/DUT/HEX1
+add wave -position end  sim:/lab7_check_tb/DUT/HEX2
+add wave -position end  sim:/lab7_check_tb/DUT/HEX3
+add wave -position end  sim:/lab7_check_tb/DUT/HEX4
+add wave -position end  sim:/lab7_check_tb/DUT/HEX5
+add wave -position end  sim:/lab7_check_tb/DUT/dout
+add wave -position end  sim:/lab7_check_tb/DUT/read_data
+add wave -position end  sim:/lab7_check_tb/DUT/mem_cmd
+add wave -position end  sim:/lab7_check_tb/DUT/mem_addr
+add wave -position end  sim:/lab7_check_tb/DUT/write_data
+add wave -position end  sim:/lab7_check_tb/DUT/N
+add wave -position end  sim:/lab7_check_tb/DUT/V
+add wave -position end  sim:/lab7_check_tb/DUT/Z
+add wave -position end  sim:/lab7_check_tb/DUT/equalsMRead
+add wave -position end  sim:/lab7_check_tb/DUT/equalsMWrite
+add wave -position end  sim:/lab7_check_tb/DUT/msel
+add wave -position end  sim:/lab7_check_tb/DUT/switchEnable
+add wave -position end  sim:/lab7_check_tb/DUT/ledEnable
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7_autograder_check.v(61)
+#    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7_autograder_check.v line 61
+add wave -position end  sim:/lab7_check_tb/DUT/MEM/mem[6]
+restart -f
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7_autograder_check.v(61)
+#    Time: 335 ps  Iteration: 2  Instance: /lab7_check_tb
+# Break in Module lab7_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/lab7_autograder_check.v line 61
+add wave -position end  sim:/lab7_check_tb/DUT/MEM/mem[5]
+add wave -position end  sim:/lab7_check_tb/DUT/MEM/mem[4]
+add wave -position end  sim:/lab7_check_tb/DUT/MEM/mem[3]
+add wave -position end  sim:/lab7_check_tb/DUT/MEM/mem[2]
+add wave -position end  sim:/lab7_check_tb/DUT/MEM/mem[1]
+add wave -position end  sim:/lab7_check_tb/DUT/MEM/mem[0]
+quit -sim
+# End time: 17:41:56 on Nov 05,2020, Elapsed time: 0:22:03
+# Errors: 0, Warnings: 0
+vsim -gui work.lab7_stage2_tb
+# vsim -gui work.lab7_stage2_tb 
+# Start time: 17:44:49 on Nov 05,2020
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+add wave -position end  sim:/lab7_stage2_tb/DUT/KEY
+add wave -position end  sim:/lab7_stage2_tb/DUT/SW
+add wave -position end  sim:/lab7_stage2_tb/DUT/LEDR
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX0
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX1
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX2
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX3
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX4
+add wave -position end  sim:/lab7_stage2_tb/DUT/HEX5
+add wave -position end  sim:/lab7_stage2_tb/DUT/dout
+add wave -position end  sim:/lab7_stage2_tb/DUT/read_data
+add wave -position end  sim:/lab7_stage2_tb/DUT/mem_cmd
+add wave -position end  sim:/lab7_stage2_tb/DUT/mem_addr
+add wave -position end  sim:/lab7_stage2_tb/DUT/write_data
+add wave -position end  sim:/lab7_stage2_tb/DUT/N
+add wave -position end  sim:/lab7_stage2_tb/DUT/V
+add wave -position end  sim:/lab7_stage2_tb/DUT/Z
+add wave -position end  sim:/lab7_stage2_tb/DUT/equalsMRead
+add wave -position end  sim:/lab7_stage2_tb/DUT/equalsMWrite
+add wave -position end  sim:/lab7_stage2_tb/DUT/msel
+add wave -position end  sim:/lab7_stage2_tb/DUT/switchEnable
+add wave -position end  sim:/lab7_stage2_tb/DUT/ledEnable
+add wave -position end  sim:/lab7_stage2_tb/DUT/CPU/DP/REGFILE/REG3/out
+add wave -position end  sim:/lab7_stage2_tb/DUT/CPU/DP/REGFILE/REG2/out
+add wave -position end  sim:/lab7_stage2_tb/DUT/CPU/DP/REGFILE/REG1/out
+add wave -position end  sim:/lab7_stage2_tb/DUT/CPU/DP/REGFILE/REG0/out
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[10]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[9]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[8]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[7]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[6]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[5]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[4]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[3]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[2]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[1]
+add wave -position end  sim:/lab7_stage2_tb/DUT/MEM/mem[0]
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 100 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 210 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 510 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab7_autograder_check.v was successful.
+# Compile of lab7_top.v was successful with warnings.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of stage2_tb.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab7_stage2_tb
+# Loading work.lab7_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 1010 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29
+# WARNING: No extended dataflow license exists
+add wave -position 22  sim:/lab7_stage2_tb/DUT/enaLEDs/cmd
+add wave -position 23  sim:/lab7_stage2_tb/DUT/enaLEDs/address
+add wave -position 24  sim:/lab7_stage2_tb/DUT/enaLEDs/enable
+add wave -position 0  sim:/lab7_stage2_tb/DUT/CPU/FSM/present_state
+restart -f
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v(29)
+#    Time: 1010 ps  Iteration: 0  Instance: /lab7_stage2_tb
+# Break in Module lab7_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7/stage2_tb.v line 29

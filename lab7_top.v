@@ -52,7 +52,6 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
           .Z          (Z)    );
 
 
-  assign HEX4 = 7'b1111111;  //Keeps HEX4 off
   // assign HEX5[0] = ~Z;
   // assign HEX5[6] = ~N;
   // assign HEX5[3] = ~V;
@@ -160,7 +159,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     input [8:0] address;
     output enable;
 
-    assign enable = (cmd==`MREAD && address==8'h140) ? 1'b1:1'b0;
+    assign enable = (cmd==`MREAD && address==9'h140) ? 1'b1:1'b0;
 
   endmodule
 
@@ -169,7 +168,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     input [8:0] address;
     output enable;
 
-    assign enable = (cmd==`MWRITE && address==8'h100) ? 1'b1:1'b0;
+    assign enable <= (cmd==`MWRITE && address==8'h100) ? 1'b1:1'b0;
 
   endmodule
 

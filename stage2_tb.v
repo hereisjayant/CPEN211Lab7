@@ -20,7 +20,7 @@ module lab7_stage2_tb;
     #10; // wait until next falling edge of clock
     KEY[1] = 1'b1; // reset de-asserted, PC still undefined if as in Figure 4
 
-    #90; // waiting for RST state to cause reset of PC
+    #1000; // waiting for RST state to cause reset of PC
 
 
 
